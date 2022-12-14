@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/captainBibby/cypress-priprema/issues"
   },
-  "homepage": "https://github.com/captainBibby/cypress-priprema#readme"
+  "homepage": "https://github.com/captainBibby/cypress-priprema#readme",
+  "dependencies": {
+    "cypress": "^12.1.0"
+  }
 }
