@@ -9,16 +9,19 @@ class MyOrganizationsPage{
     }
 
     get nextButton(){
-        return cy.get("button").eq(1);
+        return cy.get("button").contains("Next");
     }
 
     get createOrganizationButton(){
-        return cy.get("button").eq(1);
+        return cy.get("button").contains("Create");
+    }
+
+    get organizationTitle(){
+        return cy.get(".vs-c-my-organization__title");
     }
 
     createOrg (orgName) {
-        
-        this.addNewOrganizatonButton.click().eq(1);
+        this.addNewOrganizatonButton.click();
         this.organizationNameInput.type(orgName);
         this.nextButton.click();
         this.createOrganizationButton.click();

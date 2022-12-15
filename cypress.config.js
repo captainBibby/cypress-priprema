@@ -7,7 +7,6 @@ module.exports = defineConfig({
     },
     baseUrl: "https://cypress.vivifyscrum-stage.com/",
   },
-
   env: {
     userEmail: "unknown@yahoo.com",
     userPassword: "test1234"
